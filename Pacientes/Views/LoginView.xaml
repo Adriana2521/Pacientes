@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Pacientes.Views.LoginView"
+             Title="LoginView">
+
+
+
+
+    <Grid BackgroundColor="White">
+
+        <Frame HorizontalOptions="Start" Margin="-5,-5,-5,690" CornerRadius="0" BorderColor="Transparent">
+            <Frame.Background>
+                <LinearGradientBrush StartPoint="1,1 " EndPoint="0,0">
+                    <GradientStop Color="#039353"
+                          Offset="1.0" />
+                    <GradientStop Color="#02F688"
+                          Offset="0.1" />
+                </LinearGradientBrush>
+            </Frame.Background>
+        </Frame>
+
+
+        <Frame HorizontalOptions="End" Margin="-5,690,-5,-5" CornerRadius="0" BorderColor="Transparent">
+            <Frame.Background>
+                <LinearGradientBrush StartPoint="1,1 " EndPoint="0,0">
+                    <GradientStop Color="#039353"
+                          Offset="1.0" />
+                    <GradientStop Color="#02F688"
+                          Offset="0.1" />
+                </LinearGradientBrush>
+            </Frame.Background>
+
+
+
+        </Frame>
+
+
+        <Frame Margin="0,490,0,122" BackgroundColor="Transparent" CornerRadius="0" BorderColor="Transparent">
+            <Grid BackgroundColor="Transparent" HeightRequest="200" WidthRequest="412">
+                <Grid.RowDefinitions>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+
+                <Button WidthRequest="300"
+                        HeightRequest="50"
+                        CornerRadius="50"
+                        Text="INICIAR"
+                        FontAttributes="Bold"
+                        CharacterSpacing="15">
+
+
+                </Button>
+
+                <Label Grid.Row="1" 
+                       HorizontalTextAlignment="Center"
+                       Margin="9"
+                       TextColor="#263CFF"
+                       >¿Olvidaste tu contraseña?</Label>
+
+            </Grid>
+        </Frame>
+
+
+
+
+        <Frame Margin="50,50,50,400" CornerRadius="50" HasShadow="True" >
+            <StackLayout  >
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition ></RowDefinition>
+                        <RowDefinition Height="auto"></RowDefinition>
+
+                    </Grid.RowDefinitions>
+
+                    <Image Grid.Row="0" Source="Resources/Images/logoi.png" WidthRequest="150" Opacity="0.4" Margin="-15"></Image>
+                    <StackLayout Grid.Row="2" Orientation="Vertical" HorizontalOptions="CenterAndExpand" Margin="30">
+                        <Frame BackgroundColor="Transparent" HorizontalOptions="FillAndExpand" BorderColor="White" Padding="0" CornerRadius="30">
+                            <StackLayout Orientation="Horizontal">
+                                <Frame HeightRequest="40" WidthRequest="40" CornerRadius="30" Margin="4" Padding="5">
+                                    <Image Source="Resources/Images/iconou.png" Aspect="AspectFill" Margin="0"></Image>
+                                </Frame>
+
+
+                                <Entry HorizontalOptions="FillAndExpand" Placeholder="USUARIO" CharacterSpacing="5" ></Entry>
+
+                            </StackLayout>
+
+                        </Frame>
+                        <Frame BackgroundColor="Transparent" HorizontalOptions="FillAndExpand" BorderColor="White" Padding="0" CornerRadius="30" Margin="0,30,0,0">
+                            <StackLayout Orientation="Horizontal">
+                                <Frame HeightRequest="40" WidthRequest="40" CornerRadius="30" Margin="4" Padding="5">
+                                    <Image Source="Resources/Images/iconoc.png" Aspect="AspectFill" Margin="0"></Image>
+                                </Frame>
+
+
+                                <Entry HorizontalOptions="FillAndExpand"  Placeholder="CONTRASEÑA" CharacterSpacing="5" IsPassword="True"></Entry>
+
+
+                            </StackLayout>
+
+                        </Frame>
+
+
+
+
+
+                    </StackLayout>
+
+
+
+
+                </Grid>
+            </StackLayout>
+        </Frame>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </Grid>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</ContentPage>
